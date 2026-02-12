@@ -59,7 +59,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © 2026 NeoChiron. All rights reserved.
+        © 2026 Neochiron. All rights reserved.
       </div>
     </footer>
   );
