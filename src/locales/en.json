@@ -1,0 +1,53 @@
+{
+  "comingSoon": {
+    "title": "Under Construction",
+    "desc": "This page is currently under development. It will be available very soon.",
+    "button": "Back to Home"
+  },
+  "Error": {
+    "des": "The page you are looking for does not exist or may have been moved.",
+    "button": "Back to Home"
+  },
+  "Navbar": {
+    "Hak": "About Us",
+    "sss": "FAQ",
+    "Pro": "Sources",
+    "Neo": "Neobot"
+  },
+  "Main": {
+    "Hak": "About Us",
+    "Hakack": "Neochiron is a team of innovative and passionate students from Şehremini Anadolu High School, participating in the FRC (FIRST Robotics Competition). Our team consists of young individuals who think deeply in STEM (Science, Technology, Engineering, and Mathematics) fields, focus on developing problem-solving skills, and strongly believe in teamwork. Each of our members acts with curiosity and a passion for creating; they use their skills in creativity, analytical thinking, and innovation to solve real-world problems using science and technology. We do not only learn to build robots; we also develop our strategic thinking, leadership, communication, and collaboration skills. As a team passionately committed to success, we focus on pushing our limits and making a difference in every project. As Neochiron, our goal is to use the power of science to add value to society, make learning enjoyable and meaningful, and train the technological leaders of the future.",
+    "misyon": "Mission",
+    "vizyon": "Vision",
+    "misyonbsk": "OUR MISSION",
+    "misyonack": "We, Neochiron, are here to raise future engineers, scientists, and leaders. With every project, we aim not only to compete in a competition but to touch the heart of society. Our mission is not only to produce robots; it is to strengthen team spirit by sharing our knowledge and experiences and to spread learning into every area of life. At the same time, we aim to continuously improve ourselves in the fields of engineering and technology, to increase our capabilities both individually and as a team, and to build a stronger future by transferring the experience we have gained to others.",
+    "vizyonbsk": "OUR VISION",
+    "vizyonack": "Our vision is to build a future where science and technology are a source of inspiration for everyone. In this process, by blending technology, wisdom, and team spirit, we aim to leave lasting marks not only in competitions but also in the engineering world of the future. Beyond robots, our main goal is to produce ideas that touch people and to make STEM accessible, sustainable, and inspiring for everyone. Our purpose on this journey is to pave the way not only for our peers but also for future generations, to turn young people’s curiosity into a spark, and to transform that spark into a great fire within society."
+  },
+  "Faq": {
+    "faqbsk": "FAQ",
+    "soru1bsk": "1 - Why was our team founded?",
+    "soru1cvp": "The idea of founding Neochiron was born from our curiosity and enthusiasm. Our interest in coding, design, and engineering brought us together. But we quickly realized that this team is not only to learn technical knowledge; it is an opportunity to create together, solve problems, and turn our dreams into reality. Neochiron is a journey where we can experience teamwork, creativity, and a passion for learning. For us, this team is not just about building robots; it is about growing together and leaving a mark on the future.",
+    "soru2bsk": "2 - Why FRC?",
+    "soru2cvp": "The most important principles of FRC are teamwork, innovation, and contribution to society. These values are also at the center of Neochiron's journey. For us, FRC is not just a robotics competition; it is an opportunity to improve ourselves, turn our dreams into reality, and make science accessible to everyone. By integrating art into STEM, we transform it into STEAM, bringing together both technology and creativity on the same stage. As Neochiron, we do not just build robots in FRC; we also build our future.",
+    "soru3bsk": "3 - So, what is FRC?",
+    "soru3cvp": "FRC (FIRST Robotics Competition) is an international robotics competition that guides young people toward STEM (science, technology, engineering, and mathematics) fields and encourages teamwork and innovative thinking.",
+    "soru4bsk": "4 - Who is Neochiron?",
+    "soru4cvp": "We are a young FRC team composed of students from Şehremini Anatolian High School, focused on STEM, believing in teamwork, and passionately committed to success. Each of us is eager to learn, willing to produce, and determined to make a difference through the power of science."
+  },
+  "Footer": {
+    "Neo": "NEOCHIRON",
+    "team": "FRC Team 11000",
+    "ilt": "Contact",
+    "mail": "frcteam11000@gmail.com",
+    "flw": "Follow Us",
+    "dstk": "Support"
+  },
+
+  "Sources": {
+    "kay": "RESOURCES",
+    "back": "Back",
+    "sec": "Selected File",
+    "tar": "Date"
+  }
+}

@@ -1,0 +1,101 @@
+/* ---------------- LOADING SCREEN ---------------- */
+
+.loadingScreen {
+  position: fixed;
+  inset: 0;
+  background: rgb(5,5,5);
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 0.6s ease forwards;
+  animation-delay: 2.6s;
+}
+
+.logoWrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+
+.logoWrapper img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Dönen neon halka */
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+
+  border: 3px solid transparent;
+  border-top: 3px solid #5f5bff;
+  border-right: 3px solid #5f5bff;
+
+  animation: rotate 1.2s linear infinite;
+  box-shadow:
+    0 0 15px #5f5bff,
+    0 0 30px #5f5bff;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes electricFlicker {
+  0% {
+    opacity: 1;
+    text-shadow:
+      0 0 4px #5f5bff,
+      0 0 8px #5f5bff,
+      0 0 16px #5f5bff;
+  }
+
+  4% {
+    opacity: 0.2;
+    text-shadow: none;
+  }
+
+  6% {
+    opacity: 1;
+    text-shadow:
+      0 0 10px #7f7bff,
+      0 0 20px #7f7bff,
+      0 0 40px #7f7bff;
+  }
+
+  9% {
+    opacity: 0;
+    text-shadow: none;
+  }
+
+  12% {
+    opacity: 1;
+    text-shadow:
+      0 0 6px #5f5bff,
+      0 0 14px #5f5bff,
+      0 0 30px #5f5bff;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
