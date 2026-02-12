@@ -43,19 +43,11 @@
 }
 
 .Sources {
-<<<<<<< HEAD
   background: rgb(20, 20, 20);
   border-radius: 20px;
   padding: 1rem;
   width: auto;
   margin: 1.5rem;
-=======
-  width: 96%;
-  margin: 1.5rem;
-  background: rgb(20, 20, 20);
-  border-radius: 20px;
-  padding: 1rem;
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 }
 
 .source-header {
@@ -116,7 +108,6 @@
   padding: 0.4rem;
   border-radius: 8px;
   font-size: 0.8rem;
-<<<<<<< HEAD
 }
 
 @media (max-width: 1024px) {
@@ -163,6 +154,3 @@
     font-size: 0.85rem;
   }
 }
-=======
-}
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3

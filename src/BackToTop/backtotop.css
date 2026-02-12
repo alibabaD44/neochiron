@@ -11,17 +11,9 @@
   font-size: 1.2rem;
   cursor: pointer;
   z-index: 999;
-<<<<<<< HEAD
   opacity: 0;
   transform: translateY(20px) scale(0.9);
   pointer-events: none;
-=======
-
-  opacity: 0;
-  transform: translateY(20px) scale(0.9);
-  pointer-events: none;
-
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;

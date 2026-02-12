@@ -1,16 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./Navbar.css";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-<<<<<<< HEAD
 import { LanguageContext } from "../LanguageContext.jsx";
 import tr from "../locales/tr.json";
 import en from "../locales/en.json";
-=======
-import { LanguageContext } from "../LanguageContext";
-import tr from "../locales/tr.json";
-import en from "../locales/en.json";
-import { useMemo } from "react";
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);

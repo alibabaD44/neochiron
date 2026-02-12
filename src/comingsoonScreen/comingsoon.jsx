@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
 import "./comingsoon.css";
-<<<<<<< HEAD
 import { LanguageContext } from "../LanguageContext.jsx";
-=======
-import { LanguageContext } from "../LanguageContext";
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 import tr from "../locales/tr.json";
 import en from "../locales/en.json";
 import { useContext } from "react"

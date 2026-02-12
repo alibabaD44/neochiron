@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 :root{
   --color: #5f5bff;
   --electric-flicker-color-anim: #7f7bff;
 }
-=======
-/* ---------------- LOADING SCREEN ---------------- */
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 
 .loadingScreen {
   position: fixed;
@@ -45,17 +41,12 @@
   }
 }
 
-<<<<<<< HEAD
-=======
-/* Dönen neon halka */
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 .ring {
   position: absolute;
   inset: 0;
   border-radius: 50%;
 
   border: 3px solid transparent;
-<<<<<<< HEAD
   border-top: 3px solid var(--color);
   border-right: 3px solid var(--color);
 
@@ -63,15 +54,6 @@
   box-shadow:
     0 0 15px var(--color),
     0 0 30px var(--color);
-=======
-  border-top: 3px solid #5f5bff;
-  border-right: 3px solid #5f5bff;
-
-  animation: rotate 1.2s linear infinite;
-  box-shadow:
-    0 0 15px #5f5bff,
-    0 0 30px #5f5bff;
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 }
 
 @keyframes rotate {
@@ -84,15 +66,9 @@
   0% {
     opacity: 1;
     text-shadow:
-<<<<<<< HEAD
       0 0 4px var(--color),
       0 0 8px var(--color),
       0 0 16px var(--color);
-=======
-      0 0 4px #5f5bff,
-      0 0 8px #5f5bff,
-      0 0 16px #5f5bff;
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
   }
 
   4% {
@@ -103,15 +79,9 @@
   6% {
     opacity: 1;
     text-shadow:
-<<<<<<< HEAD
       0 0 10px ,
       0 0 20px var(--electric-flicker-color-anim),
       0 0 40px var(--electric-flicker-color-anim);
-=======
-      0 0 10px #7f7bff,
-      0 0 20px #7f7bff,
-      0 0 40px #7f7bff;
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
   }
 
   9% {
@@ -122,15 +92,9 @@
   12% {
     opacity: 1;
     text-shadow:
-<<<<<<< HEAD
       0 0 6px var(--color),
       0 0 14px var(--color),
       0 0 30px var(--color);
-=======
-      0 0 6px #5f5bff,
-      0 0 14px #5f5bff,
-      0 0 30px #5f5bff;
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
   }
 
   100% {

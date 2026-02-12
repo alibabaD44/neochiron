@@ -1,19 +1,11 @@
-<<<<<<< HEAD
 import React, { useState, useContext} from "react";
-=======
-import React, { useState, useContext, useEffect } from "react";
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 import Navbar from "../Navbar/Navbar";
 import LoadingScreen from "../loadingScreen/loadingScreen";
 import tr from "../locales/tr.json";
 import en from "../locales/en.json";
 import "./Source.css";
 import Footer from "../Footer/footer";
-<<<<<<< HEAD
 import { LanguageContext } from "../LanguageContext.jsx";
-=======
-import { LanguageContext } from "../LanguageContext";
->>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 
 export default function SourcePage() {
   const { lang } = useContext(LanguageContext);
