@@ -49,6 +49,7 @@
     "back": "Back",
     "sec": "Selected File",
     "tar": "Date"
+<<<<<<< HEAD
   },
   "Files": [
     {
@@ -98,4 +99,7 @@
       ]
     }
   ]
+=======
+  }
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 }

@@ -1,6 +1,9 @@
 *{
   transition: 0.1s;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 }
 
 html{
@@ -9,14 +12,21 @@ html{
     scrollbar-color: rgba(118, 105, 221) rgba(12,12,12);
      -webkit-overflow-scrolling: touch;
      scrollbar-width: thin;
+<<<<<<< HEAD
      overflow-x: hidden;
+=======
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 }
 
 body {
   margin: 0; 
   padding: 0;
+<<<<<<< HEAD
   background-color: rgb(5,5,5);
   overflow-x: hidden;
+=======
+  background-color: rgb(5,5,5)
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 }
 
 a {

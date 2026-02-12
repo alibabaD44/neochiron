@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./faq.css";
+<<<<<<< HEAD
 import { LanguageContext } from "../LanguageContext.jsx";
+=======
+import { LanguageContext } from "../LanguageContext";
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 import tr from "../locales/tr.json";
 import en from "../locales/en.json";
 import { useContext } from "react";
@@ -16,7 +20,11 @@ function Faq() {
   };
 
   return (
+<<<<<<< HEAD
     <div  className="faq">
+=======
+    <div id="sss" className="faq">
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
       <div className="baslik">
         <h1>{t.Faq.faqbsk}</h1>
       </div>

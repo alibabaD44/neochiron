@@ -1,6 +1,12 @@
 iframe{
     height: 20rem;
+<<<<<<< HEAD
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
+=======
+    width: 99%;
+    margin-top: 2rem;
+    border-radius: 20px;
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 }

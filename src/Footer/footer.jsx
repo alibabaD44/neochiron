@@ -1,6 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import { LanguageContext } from "../LanguageContext.jsx";
+=======
+import { LanguageContext } from "../LanguageContext";
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 import tr from "../locales/tr.json";
 import en from "../locales/en.json";
 import "./footer.css";
@@ -45,12 +49,15 @@ function Footer() {
               <i className="fa-brands fa-tiktok"></i>
             </a>
 
+<<<<<<< HEAD
             <a href="https://www.linkedin.com/company/neochiron" className="icon linkedin" target="_blank"
               rel="noopener noreferrer">
               <i className="fa-brands fa-linkedin-in"></i>
 
             </a>
 
+=======
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
             <a
               href="mailto:frcteam11000@gmail.com"
               className="icon mail"
@@ -65,7 +72,11 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
+<<<<<<< HEAD
         © 2026 NeoChiron. All rights reserved.
+=======
+        © 2026 Neochiron. All rights reserved.
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
       </div>
     </footer>
   );

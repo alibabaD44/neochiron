@@ -1,4 +1,5 @@
 .misyonvizyon-page {
+<<<<<<< HEAD
   height: auto;
   padding-bottom: 1rem;
   color: white;
@@ -21,6 +22,29 @@
 
 .tabs button {
   width: 100%;
+=======
+    height: 4rem;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Sans 3', sans-serif;
+  margin-left: 1rem;
+    border-radius: 20px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    gap: 0;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  width: 100%;
+}
+
+.tabs button {
+    width: 100%;
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
   background: none;
   border: none;
   color: #aaa;
@@ -34,10 +58,19 @@
   border-bottom: 2px solid rgba(118, 105, 221);
 }
 
+<<<<<<< HEAD
 .tabs button:hover {
   background-color: rgba(118, 105, 221);
 }
 
+=======
+
+.tabs button:hover {
+ background-color: rgba(118, 105, 221);
+}
+
+/* Content */
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 .tab-content {
   flex: 1;
   display: flex;
@@ -46,12 +79,20 @@
 }
 
 .content-box {
+<<<<<<< HEAD
   width: 100%;
   margin: 0 auto;
   height: auto;
   text-align: center;
   background-color: rgb(12, 12, 12);
   border-radius: 0 0 20px 20px;
+=======
+  width: 125%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(12, 12, 12);
+  border-radius: 20px;
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -64,13 +105,20 @@
   font-weight: 350;
   line-height: 1.6;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 @media (max-width: 1024px) {
   .content-box h2 {
     font-size: 1rem;
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 @media (max-width: 768px) {
   .tabs {
     gap: 1rem;
@@ -78,6 +126,10 @@
 
   .content-box {
     padding: 1.5rem;
+<<<<<<< HEAD
+=======
+    height: 20rem;
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
   }
 
   .content-box h2 {

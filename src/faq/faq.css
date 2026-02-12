@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 .faq {
     background-color: rgb(12, 12, 12);
     margin: 1rem;
@@ -5,6 +9,10 @@
     color: white;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     padding-bottom: 2rem;
+<<<<<<< HEAD
+=======
+    margin-top: 10rem;
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 }
 
 .baslik {
@@ -79,6 +87,12 @@ button:hover {
 }
 
 @media (max-width: 1024px) {
+<<<<<<< HEAD
+=======
+    .faq{
+        margin-top: 15rem;
+    }
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 
     .baslik h1 {
         font-size: 1.8rem;
@@ -90,6 +104,12 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
+=======
+    .faq{
+        margin-top: 22rem;
+    }
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 
     .baslik h1 {
         font-size: 1.5rem;

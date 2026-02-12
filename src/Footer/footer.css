@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root{
   --hover-color: rgb(118, 105, 221);
   --background : rgb(12, 12, 12);
@@ -5,12 +6,20 @@
 
 .footer {
   background-color: var(--background);
+=======
+.footer {
+  background-color: rgb(12, 12, 12);
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
   color: #ffffff;
   font-family: "Source Sans 3";
   padding-top: 1rem;
 
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 .footer-container {
   max-width: 1200px;
   margin: auto;
@@ -20,10 +29,18 @@
   padding: 0 20px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 .footer-logo img {
   width: 10rem;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 .footer-links h4,
 .footer-contact h4 {
   color: #ffffff;
@@ -49,11 +66,19 @@
   transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 .footer-contact {
   display: flex;
   flex-direction: column;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 .footer-icons {
   display: flex;
   gap: 1rem;
@@ -67,12 +92,21 @@
 
 .footer-icons .insta:hover,
 .footer-icons .mail:hover,
+<<<<<<< HEAD
 .footer-icons .tiktok:hover,
 .footer-icons .linkedin:hover {
   color: var(--hover-color);
   transform: scale(1.15);
 }
 
+=======
+.footer-icons .tiktok:hover {
+  color: rgb(118, 105, 221);
+  transform: scale(1.15);
+}
+
+
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 .footer-text {
   font-size: 14px;
   font-weight: 400;
@@ -80,6 +114,10 @@
   color: rgba(255, 255, 255, 0.65);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 .footer-bottom {
   margin-top: 40px;
   background-color: #0a0a0a;
@@ -89,6 +127,10 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+<<<<<<< HEAD
+=======
+/* ----------------- TABLET --------------- */
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 @media (max-width: 1024px) {
   .footer-container {
     grid-template-columns: 12rem 10rem 10rem 10rem;
@@ -96,6 +138,11 @@
 
 }
 
+<<<<<<< HEAD
+=======
+
+/* ---------------- MOBILE ---------------- */
+>>>>>>> 3ca1dbff1ca01a723ca12543088f24b11dbbfea3
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
