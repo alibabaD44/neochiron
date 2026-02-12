@@ -1,0 +1,223 @@
+.Foto {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+}
+
+.Foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+  opacity: 0.7;
+}
+
+.Foto::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.4) 40%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  z-index: 1;
+}
+
+.grayScreen {
+  height: 40rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grayScreen h1 {
+  margin-top: 12rem;
+  font-size: 4rem;
+  color: #ffffff;
+
+  text-shadow:
+    0 0 4px #5f5bff,
+    0 0 8px #5f5bff,
+    0 0 16px #5f5bff;
+
+  animation: electricFlicker 3s infinite;
+  letter-spacing:20px;
+}
+
+.grayScreen h2 {
+  color: rgba(118, 105, 221);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  margin-top: 18rem;
+}
+
+.Hak {
+  display: flex;
+}
+
+.Hakkımızda {
+  position: relative;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  width: 98%;
+  height: auto;
+  margin-left: 1rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.Hakkımızda h2 {
+  font-weight: 600;
+  margin-left: 1.2rem;
+  font-family: "Source Sans 3";
+}
+
+.Hak-ack h3 {
+  width: 80%;
+  font-family: "Source Sans 3";
+  font-weight: 350;
+  margin-left: 1.2rem;
+}
+
+.imgHak {
+  height: 25rem;
+  width: 25rem;
+  flex-shrink: 0;
+  margin-right: 100px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  
+}
+
+.imgHak img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.misyonandvizyon {
+  width: 98%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  height: 15rem;
+  font-family: "Source Sans 3";
+}
+
+.misyon,
+.vizyon {
+  background-color: rgb(12, 12, 12);
+  color: white;
+  flex: 1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.misyon h2,
+.vizyon h2 {
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.misyon h3,
+.vizyon h3 {
+  font-weight: 350;
+  margin: 0.5rem 0 0 0;
+}
+
+@media (max-width: 1024px) {
+  .grayScreen h1 {
+    font-size: 3rem;
+    margin-top: 16rem;
+  }
+
+  .grayScreen h2 {
+    margin-top: 20rem;
+  }
+  
+
+  .Hakkımızda {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .Hak {
+    flex-direction: column;
+  }
+
+  .imgHak {
+    width: 90%;
+    height: 20rem;
+    margin: 1rem auto 0 auto;
+  }
+
+  .Hak-ack h3 {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Foto {
+    height: 28rem;
+  }
+
+  .grayScreen {
+    height: 28rem;
+  }
+
+  .grayScreen h1 {
+    font-size: 2.2rem;
+    margin-top: 12rem;
+    letter-spacing: 10px;
+  }
+
+
+  .Hakkımızda {
+    width: 93%;
+  }
+
+  .imgHak {
+    width: 80%;
+    height: 20rem;
+    margin: 1rem auto 0 auto;
+  }
+
+  .Hak-ack h3 {
+    margin-left: 1rem;
+    width: 92%;
+    font-size: 1rem;
+  }
+
+  .misyonandvizyon {
+    margin-left: 0.5rem;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .misyon h3,
+  .vizyon h3 {
+    font-size: 1rem;
+  }
+}
+
+

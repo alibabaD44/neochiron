@@ -1,0 +1,109 @@
+:root{
+  --hover-color: rgb(118, 105, 221);
+  --background : rgb(12, 12, 12);
+}
+
+.footer {
+  background-color: var(--background);
+  color: #ffffff;
+  font-family: "Source Sans 3";
+  padding-top: 1rem;
+
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 18rem 16rem 12rem 5rem;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  width: 10rem;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow:
+    0 0 12px #5f5bff,
+    0 0 30px rgba(95, 91, 255, 0.6);
+}
+
+.footer-links a {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: rgb(118, 105, 221);
+  transform: translateY(-2px);
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icons .icon {
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-icons .insta:hover,
+.footer-icons .mail:hover,
+.footer-icons .tiktok:hover,
+.footer-icons .linkedin:hover {
+  color: var(--hover-color);
+  transform: scale(1.15);
+}
+
+.footer-text {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  background-color: #0a0a0a;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 12rem 10rem 10rem 10rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+}

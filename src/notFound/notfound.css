@@ -1,0 +1,77 @@
+.nf {
+  min-height: 100vh;
+  background: rgb(5,5,5);
+  color: white;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.nf-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(95,91,255,0.18),
+      transparent 60%
+    );
+  pointer-events: none;
+}
+
+.nf-content {
+  position: relative;
+  text-align: center;
+  max-width: 520px;
+  padding: 2rem;
+}
+
+.nf-eyebrow {
+  display: inline-block;
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  color: rgba(255,255,255);
+  margin-bottom: 0.75rem;
+}
+
+.nf-code {
+  font-size: clamp(7rem, 18vw, 13rem);
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+
+
+  text-shadow:
+    0 20px 60px rgba(95,91,255);
+}
+
+.nf-text {
+  margin-top: 1.25rem;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+
+.nf-actions {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nf-primary {
+  background: #5f5bff;
+  color: black;
+  padding: 0.8rem 10rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.25s ease;
+}
+
+.nf-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(95,91,255,0.45);
+}
+

@@ -1,0 +1,40 @@
+*{
+  transition: 0.1s;
+  
+}
+
+html{
+    font-family: 'Roboto';
+    scroll-behavior: smooth;
+    scrollbar-color: rgba(118, 105, 221) rgba(12,12,12);
+     -webkit-overflow-scrolling: touch;
+     scrollbar-width: thin;
+     overflow-x: hidden;
+}
+
+body {
+  margin: 0; 
+  padding: 0;
+  background-color: rgb(5,5,5);
+  overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+li:hover{
+  transform: translateY(-2px);
+}
+
+link:hover{
+  transform: translateY(-2px);
+}
+
+
+

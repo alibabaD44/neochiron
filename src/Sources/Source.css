@@ -1,0 +1,156 @@
+.Sourceİmg {
+  height: 40rem;
+  width: 100%;
+  position: relative;
+}
+
+.Sourceİmg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.Sourceİmg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 70%);
+  z-index: 1;
+}
+
+.SourceText {
+  height: 597px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.SourceText h1 {
+  margin-top: 20rem;
+  font-size: 4rem;
+  color: #ffffff;
+  text-shadow: 0 0 4px #5f5bff, 0 0 8px #5f5bff, 0 0 16px #5f5bff;
+  letter-spacing: 20px;
+  opacity: 0;
+  animation: electricFlicker 3s infinite;
+}
+
+.Sources {
+  background: rgb(20, 20, 20);
+  border-radius: 20px;
+  padding: 1rem;
+  width: auto;
+  margin: 1.5rem;
+}
+
+.source-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.source-header h2 {
+  color: white;
+  margin-left: 0.4rem;
+}
+
+.back-btn {
+  background: #5f5bff;
+  border: none;
+  color: white;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.file-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.file-card {
+  background: rgb(30, 30, 30);
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.file-card:hover {
+  background: rgb(40, 40, 40);
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.download-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #5f5bff;
+  padding: 0.4rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .Sourceİmg {
+    height: 30rem;
+  }
+
+  .SourceText h1 {
+    margin-top: 10rem;
+    font-size: 3rem;
+    letter-spacing: 8px;
+  }
+
+  .Sources {
+    width: auto;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .Sourceİmg {
+    height: 24rem;
+  }
+
+  .SourceText {
+    height: 100%;
+    padding: 0 1rem;
+  }
+
+  .SourceText h1 {
+    margin-top: 10rem;
+    font-size: 2.4rem;
+    letter-spacing: 8px;
+    text-align: center;
+  }
+
+  .file-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .back-btn {
+    width: 4.5rem;
+    height: 1.9rem;
+    font-size: 0.85rem;
+  }
+}

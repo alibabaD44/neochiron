@@ -1,0 +1,108 @@
+.faq {
+    background-color: rgb(12, 12, 12);
+    margin: 1rem;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    padding-bottom: 2rem;
+}
+
+.baslik {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.baslik h1 {
+    font-size: 2.2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.soru-kutu {
+    background-color: rgb(15, 15, 15);
+    margin: 1rem;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.soru {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.soru h2 {
+    font-size: 1.4rem;
+    font-weight: 450;
+}
+
+button {
+    opacity: 1;
+    background-color: rgba(118, 105, 221);;
+    border: none;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cevap {
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.cevap h3 {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 350;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .baslik h1 {
+        font-size: 1.8rem;
+    }
+
+    .soru h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .baslik h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .soru h2 {
+        font-size: 1.1rem;
+    }
+
+    .cevap h3 {
+        font-size: 0.95rem;
+    }
+}
+
+

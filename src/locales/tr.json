@@ -1,0 +1,102 @@
+{
+  "comingSoon": {
+    "title": "Yapım Aşamasında",
+    "desc": "Bu sayfa şu anda geliştiriliyor. Çok yakında erişime açılacak.",
+    "button": "Anasayfaya Dön"
+  },
+  "Error": {
+    "des": "Aradığın sayfa mevcut değil veya taşınmış olabilir.",
+    "button": "Anasayfaya Dön"
+  },
+  "Navbar": {
+    "Hak": "Hakkımızda",
+    "sss": "S.S.S",
+    "Pro": "Kaynaklar",
+    "Neo": "Neobot"
+  },
+  "Main": {
+    "Hak": "Hakkımızda",
+    "Hakack": "Neochiron, Şehremini Anadolu Lisesi öğrencilerinden oluşan, yenilikçi ve tutkulu bir FRC (FIRST Robotics Competition) takımıdır. Takımımız, STEM (Bilim, Teknoloji, Mühendislik ve Matematik) alanlarında derinlemesine düşünen, problem çözme yeteneklerini geliştirmeye odaklanan ve takım çalışmasına güçlü bir şekilde inanan gençlerden oluşmaktadır. Her bir üyemiz, öğrenmeye olan merakı ve üretme tutkusuyla hareket eder; yaratıcılık, analitik düşünme ve inovasyon gibi becerilerini, bilim ve teknolojiyi kullanarak gerçek dünyadaki problemlere çözüm üretmek için kullanır. Bizler, sadece robot yapmayı öğrenmekle kalmaz; aynı zamanda stratejik düşünme, liderlik, iletişim ve iş birliği becerilerimizi de geliştiririz. Başarıya tutkuyla bağlı bir ekip olarak, her projede sınırlarımızı zorlamaya ve fark yaratmaya odaklanırız. Neochiron olarak amacımız, bilimin gücünü kullanarak topluma değer katmak, öğrenmeyi eğlenceli ve anlamlı hâle getirmek ve geleceğin teknolojik liderlerini yetiştirmektir.",
+    "misyon": "Misyon",
+    "vizyon": "Vizyon",
+    "misyonbsk": "MİSYONUMUZ",
+    "misyonack": "Biz Neochiron, geleceğin mühendislerini, bilim insanlarını ve liderlerini yetiştirmek için buradayız. Her proje ile yalnızca bir yarışmaya değil, toplumun kalbine dokunmayı hedefliyoruz. Misyonumuz, yalnızca robotlar üretmek değil; bilgi ve deneyimlerimizi paylaşarak takım ruhunu güçlendirmek ve öğrenmeyi hayatın her alanına yaymaktır. Bununla birlikte, mühendislik ve teknoloji alanlarında kendimizi sürekli geliştirerek hem bireysel hem de takım olarak donanımımızı artırmayı, elde ettiğimiz birikimi başkalarına aktararak daha güçlü bir gelecek inşa etmeyi amaçlıyoruz.",
+    "vizyonbsk": "VİZYONUMUZ",
+    "vizyonack": "Vizyonumuz; bilimin ve teknolojinin herkes için ilham kaynağı olduğu bir gelecek kurmaktır. Bu süreçte teknolojiyi, bilgeliği ve ekip ruhunu harmanlayarak yalnızca yarışmalarda değil, geleceğin mühendislik dünyasında da kalıcı izler bırakmayı hedefliyoruz. Robotların ötesinde, insanlara dokunan fikirler üretmek ve STEM’i herkes için ulaşılabilir, sürdürülebilir ve ilham verici hale getirmek temel amacımızdır. Bu yolculuktaki gayemiz; yalnızca kendi yaşıtlarımızın değil, bizlerden sonra gelecek nesillerin de önünü açmak, gençlerin merakını kıvılcıma dönüştürmek ve o kıvılcımı toplumda büyük bir ateşe çevirmektir."
+  },
+  "Faq": {
+    "faqbsk": "Sıkça Sorulan Sorular",
+    "soru1bsk": "1 - Takımımız neden kuruldu?",
+    "soru1cvp": "Neochiron'u kurma fikri, içimizdeki merak ve hevesten doğdu. Kodlamaya, tasarıma ve mühendisliğe duyduğumuz ilgi bizi bir araya getirdi. Ancak kısa sürede fark ettik ki, bu takım yalnızca teknik bilgi öğrenmek için değil; birlikte üretmek, problem çözmek ve hayallerimizi gerçeğe dönüştürmek için bir fırsat. Neochiron, ekip çalışmasını, yaratıcılığı, ve öğrenme tutkusunu deneyimleyebileceğimiz bir yolculuktur. Bizim için bu takım, sadece robot yapmak değil; birlikte büyümek ve geleceğe iz bırakmaktır.",
+    "soru2bsk": "2 - Neden FRC?",
+    "soru2cvp": "FRC'nin en önemli ilkeleri; ekip çalışması, yenilikçilik ve topluma katkı. İşte bu değerler, Neochiron'un da yolculuğunun merkezinde yer alıyor. Bizim için FRC sadece bir robotik yarışma değil; kendimizi geliştirme, hayallerimizi gerçeğe dönüştürme ve bilimi herkes için ulaşılır kılma fırsatı. STEM'i sanatı da içine alarak STEAM'e dönüştürüyor, hem teknolojiyi hem de yaratıcılığı aynı sahnede buluşturuyoruz. Neochiron olarak biz, FRC'de sadece robot yapmıyoruz; aynı zamanda geleceğimizi inşa ediyoruz.",
+    "soru3bsk": "3 - Peki nedir bu FRC?",
+    "soru3cvp": "FRC (FIRST Robotics Competition), gençleri STEM (bilim, teknoloji, mühendislik ve matematik) alanlarına yönlendiren, takım çalışmasını ve yenilikçi düşünceyi teşvik eden uluslararası bir robotik yarışmadır.",
+    "soru4bsk": "4 - Neochiron kimdir?",
+    "soru4cvp": "Biz, Şehremini Anadolu Lisesi öğrencilerinden oluşan; STEM odaklı düşünen, ekip çalışmasına inanan ve başarıya tutkuyla bağlı genç bir FRC takımıyız. Her birimiz öğrenmeye hevesli, üretmeye istekli ve bilimin gücüyle fark yaratmak isteyen bireyleriz."
+  },
+  "Footer": {
+    "Neo": "NEOCHIRON",
+    "team": "FRC Team 11000",
+    "ilt": "İletişim",
+    "mail": "frcteam11000@gmail.com",
+    "flw": "Bize ulaşın",
+    "dstk": "Destek"
+  },
+
+  "Sources": {
+    "kay": "KAYNAKLAR",
+    "back": "Geri",
+    "sec": "Seçilen Dosya",
+    "tar": "Tarih"
+  },
+
+  "Files": [
+    {
+      "type": "folder",
+      "name": "FRC",
+      "contents": [
+        {
+          "type": "file",
+          "name": "Robot_Wiring",
+          "ext": ".pdf",
+          "date": "2025-01-10",
+          "url": "/files/robot_wiring.pdf"
+        },
+        {
+          "type": "file",
+          "name": "Control_System",
+          "ext": ".pdf",
+          "date": "2025-01-12",
+          "url": "/files/control_system.pdf"
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Kodlar",
+      "contents": [
+        {
+          "type": "file",
+          "name": "main",
+          "ext": ".java",
+          "date": "2025-02-01",
+          "url": "/files/main.java"
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Baba",
+      "contents": [
+        {
+          "type":"file",
+          "name":"tanıtım",
+          "ext":".pdf",
+          "date":"2026-27-01",
+          "url":"/files/tanıtım.pdf"
+        }
+      ]
+    }
+  ]
+}

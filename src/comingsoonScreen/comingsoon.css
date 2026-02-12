@@ -1,0 +1,73 @@
+:root{
+  --color : #5f5bff; 
+  --background : rgb(5,5,5);
+  --shadow : rgba(95,91,255,0.6);
+}
+
+.cs {
+  min-height: 100vh;
+  background: var(--background);
+  color: white;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(95,91,255,0.18),
+      transparent 60%
+    );
+  pointer-events: none;
+}
+
+.cs-content {
+  position: relative;
+  text-align: center;
+}
+
+.cs-eyebrow {
+  display: inline-block;
+  letter-spacing: 0.35em;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 0.8rem;
+}
+
+.cs-content h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+
+  text-shadow:
+    0 0 12px var(--color),
+    0 0 30px var(--shadow);
+}
+
+.cs-content p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.7);
+}
+
+
+.cs-content .cs-btn {
+  margin-top: 3rem;
+  background: var(--color);
+  color: black;
+  padding: 1rem ;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.25s ease;
+}
+
+.cs-content .cs-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(95,91,255,0.45);
+}
