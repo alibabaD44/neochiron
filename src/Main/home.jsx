@@ -13,9 +13,6 @@ function Home() {
   const { lang } = useContext(LanguageContext);
 
   const t = lang === "tr" ? tr : en;
-
-  
-
   return (
     <>
       <LoadingScreen />
@@ -26,7 +23,7 @@ function Home() {
         </div>
         <img src="/src/assets/takım.png" alt="" />
       </div>
-      <div  className="Hakkımızda">
+      <div className="Hakkımızda">
         <div className="Hak">
           <div className="Hak-ack">
             <h2>{t.Main.Hak}</h2>
@@ -45,7 +42,7 @@ function Home() {
           >
             {t.Main.misyon}
           </button>
-          <button 
+          <button
             className={activeTab === "vizyon" ? "active" : ""}
             onClick={() => setActiveTab("vizyon")}
           >
@@ -73,7 +70,7 @@ function Home() {
           )}
         </div>
       </section>
-      <BackToTop/>
+      <BackToTop />
     </>
   );
 }
