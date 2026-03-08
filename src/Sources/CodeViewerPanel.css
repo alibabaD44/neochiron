@@ -1,0 +1,152 @@
+.code-viewer-panel {
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
+  background: rgb(18, 18, 20);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-viewer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.6rem 0.85rem;
+  background: rgb(25, 25, 28);
+  border-bottom: 1px solid rgba(95, 91, 255, 0.25);
+  flex-shrink: 0;
+  min-height: 2.75rem;
+  box-sizing: border-box;
+}
+
+.code-viewer-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+}
+
+.code-viewer-icon {
+  color: #5f5bff;
+  font-size: 1rem;
+  font-weight: 700;
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+.code-viewer-filename {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.code-viewer-date {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  margin-left: 0.25rem;
+  flex-shrink: 0;
+}
+
+.code-viewer-download-btn {
+  background: #5f5bff;
+  border: none;
+  color: white;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  white-space: nowrap;
+  width: max-content;
+  min-width: max-content;
+  box-sizing: border-box;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.code-viewer-download-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.code-viewer-content {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.code-viewer-loading,
+.code-viewer-error {
+  padding: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.code-viewer-error {
+  color: #f87171;
+}
+
+.code-viewer-scroll {
+  overflow: auto;
+  padding: 0;
+  height: 100%;
+  min-height: 400px;
+}
+
+.code-viewer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Consolas", "Monaco", "Liberation Mono", monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.code-viewer-line {
+  transition: background 0.1s;
+}
+
+.code-viewer-line:hover {
+  background: rgba(95, 91, 255, 0.06);
+}
+
+.code-viewer-num {
+  width: 3rem;
+  min-width: 3rem;
+  padding: 0 0.75rem;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.35);
+  user-select: none;
+  vertical-align: top;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.code-viewer-code {
+  padding: 0 1rem;
+  vertical-align: top;
+  word-break: break-all;
+  white-space: pre;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.code-viewer-code code {
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  padding: 0;
+}
+
+.code-viewer-empty {
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.9rem;
+}

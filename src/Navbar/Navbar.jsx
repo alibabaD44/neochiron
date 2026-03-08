@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./Navbar.css";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link} from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link"; 
 import { LanguageContext } from "../LanguageContext.jsx";
 import tr from "../locales/tr.json";
 import en from "../locales/en.json";
@@ -11,10 +12,7 @@ function Navbar() {
 
   const { setLang, lang } = useContext(LanguageContext);
   const t = lang === "tr" ? tr : en;
-  
 
-  const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,17 +21,6 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const goToSection = (id) => {
-    setMenuOpen(false);
-
-    if (location.pathname !== "/") {
-      navigate("/", { state: { scrollTo: id } });
-    } else {
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <nav className={scrolled ? "navbar scrolled" : "navbar"}>
@@ -46,11 +33,15 @@ function Navbar() {
 
       <div className={`side-menu ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li onClick={() => goToSection("hakkimizda")}>
-            {t.Navbar.Hak}
+          <li>
+            <NavHashLink smooth to="/#hakkimizda" onClick={() => setMenuOpen(false)}>
+              {t.Navbar.Hak}
+            </NavHashLink>
           </li>
-          <li onClick={() => goToSection("sss")}>
-            {t.Navbar.sss}
+          <li>
+            <NavHashLink smooth to="/#sss" onClick={() => setMenuOpen(false)}>
+              {t.Navbar.sss}
+            </NavHashLink>
           </li>
           <li>
             <Link to="/kaynaklar" onClick={() => setMenuOpen(false)}>
@@ -59,7 +50,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              to="https://chiron.streamlit.app/"
+              to="https://neochironai.com/"
               target="_blank"
               onClick={() => setMenuOpen(false)}
             >
@@ -77,17 +68,17 @@ function Navbar() {
         </div>
 
         <ul className="desktop-menu">
-          <li onClick={() => goToSection("hakkimizda")}>
-            {t.Navbar.Hak}
+          <li>
+            <NavHashLink smooth to="/#hakkimizda">{t.Navbar.Hak}</NavHashLink>
           </li>
-          <li onClick={() => goToSection("sss")}>
-            {t.Navbar.sss}
+          <li>
+            <NavHashLink smooth to="/#sss">{t.Navbar.sss}</NavHashLink>
           </li>
           <li>
             <Link to="/kaynaklar">{t.Navbar.Pro}</Link>
           </li>
           <li>
-            <Link to="https://chiron.streamlit.app/" target="_blank">
+            <Link to="https://neochironai.com/" target="_blank">
               {t.Navbar.Neo}
             </Link>
           </li>

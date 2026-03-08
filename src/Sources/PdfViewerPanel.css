@@ -1,0 +1,242 @@
+/* Panel: tek scroll bağlamı, taşma yok */
+.pdf-viewer-panel {
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
+  max-height: 80vh;
+  background-color: rgb(20, 20, 20);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+}
+
+.pdf-viewer-wrapper {
+  flex: 1;
+  min-height: 0; /* flex ile scroll için gerekli */
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.pdf-viewer-wrapper .rpv-core__viewer {
+  height: 100%;
+  min-height: 400px;
+}
+
+/* PDF sayfaları tek scroll alanı; üst container'a zincirleme olmasın */
+.pdf-viewer-wrapper .rpv-core__inner-pages {
+  overflow: auto !important;
+  overflow-x: hidden !important;
+  height: 100%;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pdf-viewer-wrapper .rpv-core__inner-pages {
+  background-color: rgb(20, 20, 20);
+}
+
+.pdf-viewer-panel .rpv-core__inner-container {
+  width: 100%;
+}
+
+.pdf-viewer-panel .rpv-core__page-layer {
+  margin: 0 auto;
+}
+
+.pdf-viewer-panel .rpv-core__inner-page--single {
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.pdf-viewer-panel .rpv-core__primary-button {
+  background-color: #5f5bff;
+}
+
+.pdf-viewer-panel .rpv-core__minimal-button--selected {
+  background-color: rgba(95, 91, 255, 0.4);
+}
+
+.pdf-viewer-panel .rpv-core__menu-item:hover {
+  background-color: rgba(95, 91, 255, 0.3);
+}
+
+/* FAB — sağ altta iki grup yan yana */
+.pdf-viewer-fab {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+/* Zoom grubu */
+.pdf-viewer-fab-zoom {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 20px;
+  padding: 0.3rem 0.6rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-viewer-fab-zoom-label {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.8rem;
+  min-width: 3rem;
+  text-align: center;
+  user-select: none;
+}
+
+/* Sayfa grubu */
+.pdf-viewer-fab-pages {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pdf-viewer-fab-page-info {
+  background: rgba(30, 30, 30, 0.95);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+/* Ortak buton */
+.pdf-viewer-fab-btn {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: none;
+  background: #5f5bff;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 14px rgba(95, 91, 255, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex-shrink: 0;
+}
+
+.pdf-viewer-fab-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(95, 91, 255, 0.5);
+}
+
+.pdf-viewer-fab-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Zoom butonları biraz daha küçük */
+.pdf-viewer-fab-btn--zoom {
+  width: 2.1rem;
+  height: 2.1rem;
+  font-size: 1.2rem;
+  box-shadow: none;
+}
+
+.pdf-viewer-fab-btn--zoom:hover {
+  box-shadow: none;
+  transform: none;
+  opacity: 0.85;
+}
+
+/* --- RESPONSIVE AYARLAR --- */
+
+@media (max-width: 768px) {
+  .pdf-viewer-panel {
+    min-height: 50vh;
+    max-height: 90vh; /* Mobilde dikey alanı daha iyi kullanmak için */
+    border-radius: 8px;
+  }
+
+  /* FAB Grubu: Mobilde yan yana sığmayacağı için dikey dizilime geçiyoruz */
+  .pdf-viewer-fab {
+    flex-direction: column-reverse; /* Sayfa navigasyonu üstte, zoom altta kalsın */
+    align-items: flex-end;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  /* Zoom Grubu Mobilde Küçültme */
+  .pdf-viewer-fab-zoom {
+    padding: 0.2rem 0.4rem;
+    background: rgba(25, 25, 25, 0.98); /* Biraz daha opak */
+  }
+
+  .pdf-viewer-fab-zoom-label {
+    min-width: 2.5rem;
+    font-size: 0.75rem;
+  }
+
+  /* Sayfa Grubu Navigasyonu */
+  .pdf-viewer-fab-pages {
+    gap: 0.4rem;
+  }
+
+  .pdf-viewer-fab-page-info {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  /* Buton Boyutlarını Optimize Etme */
+  .pdf-viewer-fab-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .pdf-viewer-fab-btn--zoom {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1rem;
+  }
+
+  /* PDF içeriğinin mobilde kenarlara çok yapışmaması için */
+  .pdf-viewer-panel .rpv-core__inner-pages {
+    padding-bottom: 80px !important; /* FAB'ların PDF metnini kapatmaması için boşluk */
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-viewer-panel {
+    max-height: 85vh;
+  }
+
+  /* Çok küçük ekranlarda zoom panelini gizleyebilir 
+     veya sadece butonları bırakabilirsiniz. 
+     Aşağıdaki kod zoom etiketini gizleyip butonları korur: */
+  .pdf-viewer-fab-zoom-label {
+    display: none;
+  }
+  
+  .pdf-viewer-fab-zoom {
+    gap: 0.1rem;
+  }
+}
+
+/* Dokunmatik ekranlarda scroll bar'ı daha temiz göstermek için */
+@media (pointer: coarse) {
+  .pdf-viewer-wrapper .rpv-core__inner-pages::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .pdf-viewer-wrapper .rpv-core__inner-pages::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+}

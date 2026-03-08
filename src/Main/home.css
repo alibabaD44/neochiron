@@ -98,7 +98,7 @@
   margin-right: 100px;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  
+  object-fit: contain;
 }
 
 .imgHak img{

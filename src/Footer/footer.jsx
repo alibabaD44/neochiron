@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link"; // Eklendi
 import { LanguageContext } from "../LanguageContext.jsx";
 import tr from "../locales/tr.json";
 import en from "../locales/en.json";
@@ -18,14 +19,16 @@ function Footer() {
 
         <div className="footer-links">
           <h4>{t.Navbar.Hak}</h4>
-          <a href="#hakkimizda">{t.Navbar.Hak}</a>
+          {/* href yerine NavHashLink kullanıldı */}
+          <NavHashLink smooth to="/#hakkimizda">{t.Navbar.Hak}</NavHashLink>
           <Link to="/kaynaklar">{t.Navbar.Pro}</Link>
-          <Link to="/neobot">{t.Navbar.Neo}</Link>
+          <Link to="https://neochironai.com/">{t.Navbar.Neo}</Link>
         </div>
 
         <div className="footer-links">
           <h4>{t.Footer.dstk}</h4>
-          <a href="#sss">{t.Navbar.sss}</a>
+          {/* href yerine NavHashLink kullanıldı */}
+          <NavHashLink smooth to="/#sss">{t.Navbar.sss}</NavHashLink>
         </div>
 
         <div className="footer-contact">
@@ -59,8 +62,6 @@ function Footer() {
               <i className="fa-solid fa-envelope"></i>
             </a>
           </div>
-
-
         </div>
       </div>
 

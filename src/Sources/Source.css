@@ -1,5 +1,5 @@
 .Sourceİmg {
-  height: 40rem;
+  height: 26rem;
   width: 100%;
   position: relative;
 }
@@ -20,7 +20,7 @@
 }
 
 .SourceText {
-  height: 597px;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -33,8 +33,8 @@
 }
 
 .SourceText h1 {
-  margin-top: 20rem;
-  font-size: 4rem;
+  margin: 0;
+  font-size: 3.2rem;
   color: #ffffff;
   text-shadow: 0 0 4px #5f5bff, 0 0 8px #5f5bff, 0 0 16px #5f5bff;
   letter-spacing: 20px;
@@ -42,24 +42,102 @@
   animation: electricFlicker 3s infinite;
 }
 
-.Sources {
+/* Desktop: max 7xl container */
+.sources-container {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.sources-main {
+  display: grid;
+  grid-template-columns: minmax(280px, 320px) 1fr;
+  gap: 1.5rem;
+  min-height: 60vh;
+}
+
+.sources-list {
   background: rgb(20, 20, 20);
   border-radius: 20px;
   padding: 1rem;
-  width: auto;
-  margin: 1.5rem;
+  height: fit-content;
+  position: sticky;
+  top: 1.5rem;
+  align-self: start;
+}
+
+.sources-preview {
+  background: rgb(20, 20, 20);
+  border-radius: 20px;
+  padding: 0;
+  min-height: 60vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PDF açıkken tek scroll alanı olsun, dışarı taşma olmasın */
+.sources-preview .pdf-viewer-panel {
+  flex: 1;
+  min-height: 0;
+}
+
+.sources-preview-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+}
+
+.sources-preview-file {
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.sources-preview-file-info {
+  color: white;
+}
+
+.sources-preview-file-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.sources-preview-file-info p {
+  margin: 0 0 1rem 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.preview-download-btn {
+  background: #5f5bff;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.preview-download-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .source-header {
   display: flex;
   align-items: center;
   gap: 1rem;
-
 }
 
 .source-header h2 {
   color: white;
-  margin-left: 0.4rem;
+  margin: 0;
+  font-size: 1.1rem;
 }
 
 .back-btn {
@@ -100,14 +178,30 @@
   margin-bottom: 0.5rem;
 }
 
-.download-icon {
+.download-icon-btn {
   position: absolute;
   bottom: 10px;
   right: 10px;
   background: #5f5bff;
-  padding: 0.4rem;
-  border-radius: 8px;
-  font-size: 0.8rem;
+  border: none;
+  color: white;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-icon-btn:hover {
+  opacity: 0.9;
+}
+
+.file-card.selected {
+  outline: 2px solid #5f5bff;
+  background: rgb(35, 35, 45);
 }
 
 @media (max-width: 1024px) {
@@ -121,27 +215,41 @@
     letter-spacing: 8px;
   }
 
-  .Sources {
-    width: auto;
-    margin: 1rem auto;
+  .sources-main {
+    grid-template-columns: 1fr;
+  }
+
+  .sources-list {
+    position: static;
+    align-self: stretch;
+  }
+
+  .sources-preview {
+    min-height: 50vh;
+  }
+
+  .sources-preview-empty {
+    min-height: 50vh;
   }
 }
 
 @media (max-width: 720px) {
   .Sourceİmg {
-    height: 24rem;
+    height: 18rem;
   }
 
   .SourceText {
-    height: 100%;
     padding: 0 1rem;
   }
 
   .SourceText h1 {
-    margin-top: 10rem;
-    font-size: 2.4rem;
-    letter-spacing: 8px;
+    font-size: 1.75rem;
+    letter-spacing: 6px;
     text-align: center;
+  }
+
+  .sources-container {
+    padding: 1rem;
   }
 
   .file-grid {
@@ -152,5 +260,13 @@
     width: 4.5rem;
     height: 1.9rem;
     font-size: 0.85rem;
+  }
+
+  .sources-preview {
+    min-height: 400px;
+  }
+
+  .sources-preview-empty {
+    min-height: 400px;
   }
 }

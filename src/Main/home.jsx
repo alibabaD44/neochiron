@@ -31,7 +31,7 @@ function Home() {
           </div>
         </div>
         <div className="imgHak">
-          <img src="/src/assets/robot.png" alt="" />
+          <img src="/src/assets/takım2.png" alt="" />
         </div>
       </div>
       <section className="misyonvizyon-page">
